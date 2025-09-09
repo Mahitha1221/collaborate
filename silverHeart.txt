@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Heart on Black Background</title>
+    <style>
+        body {
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .heart {
+            width: 150px;
+            height: 150px;
+            background-color: silver;
+            position: relative;
+            transform: rotate(45deg);
+        }
+
+        .heart:before, .heart:after {
+            content: '';
+            width: 150px;
+            height: 150px;
+            background-color: silver;
+            position: absolute;
+            top: 0;
+        }
+
+        .heart:before {
+            border-radius: 100px 0 0 100px;
+            left: -75px;
+        }
+
+        .heart:after {
+            border-radius: 100px 100px 0 0;
+            left
